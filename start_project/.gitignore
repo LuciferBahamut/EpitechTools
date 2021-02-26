@@ -1,0 +1,12 @@
+*.o
+*.obj
+*.so
+*.exe
+*.app
+*.lib
+*.a
+*.out
+*.gcno
+*.gcda
+*vgcore
+unit_tests

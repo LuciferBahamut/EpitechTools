@@ -1,0 +1,32 @@
+name: Test
+
+on:
+  push:
+    branches:
+      - master
+      - dev
+
+jobs:
+  unit_tests:
+    runs-on: ubuntu-20.04
+    container: docker://epitechcontent/epitest-docker
+
+    steps:
+      - name: Checkout
+        uses: actions/Checkout@v2
+
+      - name: Run tests
+        shell: bash # Optional
+        run: make tests_run
+
+      - name: Get coverage
+        if: ${{ always() }} #Always upload logs even on lose
+        shell: bash # Optional
+        run: make coverage > coverage_outputs
+
+      - name: Upload coverage artifact
+        if: ${{ always() }} #Always upload logs even on lose
+        uses: actions/upload-artifact@v2
+        with:
+          name: coverage_outputs
+          path: ./coverage_outputs
