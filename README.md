@@ -9,6 +9,9 @@ You can find different version of norminette in GitHub.
 
 It's very important to respect the norme !
 
+Follow a norme for your push to !
+ememple : `[ADD] main` - `[UPD] main` - `[DEL] .o` - `[MOV] image` - `[RENAME] mani into main`
+
 ## Script for auto start project and auto first push
 
 ### How to use
