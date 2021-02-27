@@ -52,28 +52,34 @@ I use [this theme](https://userstyles.org/styles/136022/epitech-flat-intranet)
 
 ### Use an extension to show your XP HUB !
 
-You find all information on [the original GitHub](https://github.com/NialaH/intraxphub_chrome)
+You can find all information on [the original GitHub](https://github.com/NialaH/intraxphub_chrome)
 
 ### Alert activity
 
-This Chrome extension can alert you before an activity, it's cool to skip an -21 :)
+This Chrome extension can alert you before an activity, it's cool to skip a -21 :)
 
-You can find [here](https://chrome.google.com/webstore/detail/epitech-manager/jekeepplfbimflieidnckjigmmnjaadm?hl=fr)
+You can find it [here](https://chrome.google.com/webstore/detail/epitech-manager/jekeepplfbimflieidnckjigmmnjaadm?hl=fr)
 
 ### Sync your planning
 
-You can find many GitHub or extension to link your planning on your intra and your Google's calendriar or Outlook calendriar
+You can find many GitHubs or extensions to link your planning on the intra and your Google calendar or Outlook calendar
 
 ## To have a good my.epitech.eu !
 
-### Add pourcentage project
+### Add percentage project
 
-Before 2021 my.epitech.eu have a pourcentage for project. It's deleted because students "s'accorchais trop dessus délaissant le plus important de passer le plus de test possible et non pas de juste mettre une gestion d'erreur pour avoir 50 % comme ça peut etre le cas pour certains projets".
+Before 2021 my.epitech.eu had a percentage for each project. 
+
+It's been deleted because students were clinging on it too much and gave up on the idea to pass as much tests as possible in as much categories as possible whereas just making an error handling and get 50% on the project (yes it can happen...)
 
 You can find this theme [here](https://github.com/alwyn974/MyEpitechExt)
 
 ## Create your style or extension
 
-You can create your style just learn languages and do it ! (you can find intra API on GitHub)
+You can create your own style just learn the languages and do it ! (you can find intra API on GitHub)
 
-You can pass this in Project Maker or Project Bidouille
+You can make this project count for your scholarship by making it a Project Maker or a Project Bidouille
+
+
+
+Good luck to you and work hard :)
