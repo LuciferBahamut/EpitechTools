@@ -1,5 +1,5 @@
 # EpitechTools
-All tools for a great experiance at Epitech !
+All tools for a great experience at Epitech !
 
 ## Norminette
 
@@ -66,7 +66,7 @@ You can find many GitHubs or extensions to link your planning on the intra and y
 
 ## To have a good my.epitech.eu !
 
-### Add percentage project
+### Add percentage to the projects
 
 Before 2021 my.epitech.eu had a percentage for each project. 
 
