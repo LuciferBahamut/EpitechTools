@@ -34,10 +34,13 @@ then
 else
     cd $2
 fi
+echo "# $2" >> README.md
 git add Makefile
 git commit -m "[ADD] Makefile"
 git add .gitignore
 git commit -m "[ADD] .gitignore"
+git add README.md
+git commit -m "[ADD] readme.md"
 git push
 git branch dev
 git push --set-upstream origin dev
