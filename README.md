@@ -27,8 +27,6 @@ Finally, execute this script `./start_project.sh "gitclone repo" "name of this r
 
 exemple : `./start_project.sh git@github.com:LuciferBahamut/EpitechTools.git EpitechTools`
 
-WARNING - Makefile has some problems - FIX in progress
-
 ### Why should you use it ?
 
 This script copies a perfect Makefile, `src` folder, `include` folder, `tests` folder for your Unit_tests (that you should write ;) ), `.gitignore` file and `.github/worflows/test.yaml` to have a github action (check [this repo](https://github.com/LuciferBahamut/workshop-ga-LuciferBahamut) for an exemple of github action).
