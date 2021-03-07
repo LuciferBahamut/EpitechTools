@@ -24,7 +24,7 @@ INC			=	-I./include/
 
 ##	Obj	   ##
 MAIN_OBJ	=	$(MAIN:.c=.o)
-SRC_OBJ		=	$(BIN_SRC:.C=.o)
+SRC_OBJ		=	$(BIN_SRC:.c=.o)
 TEST_OBJ	=	$(TEST_SRC:.c=.o)
 #############
 
@@ -40,24 +40,21 @@ TEST_BIN	=	unit_tests
 #############
 
 ##	Rules  ##
-all:	$(BIN)
-$(BIN): $(MAIN_OBJ) $(SRC_OBJ)
+all:	$(MAIN_OBJ) $(SRC_OBJ)
 	$(CC) -o $(BIN) $(MAIN_OBJ) $(SRC_OBJ) $(CFLAGS) $(CPPFLAGS)
-	clean
 
 # Debug
 debug:	fclean
 debug:	CFLAGS += -g3 -DDEBUG
-debug:	$(BIN)
+debug:	all
 
 # Unit Test
 tests_run:	fclean
 tests_run:	CFLAGS += --coverage
 tests_run:	LDFLAGS += -lcriterion -DUNIT_TEST
 tests_run:	$(SRC_OBJ) $(TEST_OBJ)
-	$(CC) -o $(TEST_BIN) $(SRC_OBJ) $(TEST_OBJ) $(LDFLAGS) $(CFLAGS) $(CPPFLAGS)
+	$(CC) -o $(TEST_BIN) $(BIN_SRC) $(TEST_SRC) $(LDFLAGS) $(CFLAGS) $(CPPFLAGS)
 	./$(TEST_BIN)
-	clean
 
 # Coverage
 coverage:
@@ -73,10 +70,10 @@ clean:
 fclean: clean
 	@$(RM) $(BIN)
 	@$(RM) $(TEST_BIN)
-	@$(RM) **/*.gc*
+	@$(RM) */*.gc*
 
 # re
-re : fclean all clean
+re : fclean all
 
 # PHONY
 .PHONY: all debug tests_run coverage clean fclean re
