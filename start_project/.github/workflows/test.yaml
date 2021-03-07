@@ -7,6 +7,19 @@ on:
       - dev
 
 jobs:
+  compile:
+    runs-on: ubuntu-20.04
+    container: docker://epitechcontent/epitest-docker
+
+    steps:
+      - name: Compile
+        shell: bash # Optional
+        run: make
+
+      - name: Clean
+        shell: bash # Optinal
+        run: make fclean
+
   unit_tests:
     runs-on: ubuntu-20.04
     container: docker://epitechcontent/epitest-docker
