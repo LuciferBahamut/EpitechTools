@@ -12,6 +12,9 @@ jobs:
     container: docker://epitechcontent/epitest-docker
 
     steps:
+      - name: Checkout
+        uses: actions/Checkout@v2
+      
       - name: Compile
         shell: bash # Optional
         run: make
