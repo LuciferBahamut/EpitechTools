@@ -29,9 +29,14 @@ exemple : `./start_project.sh git@github.com:LuciferBahamut/EpitechTools.git Epi
 
 ### Why should you use it ?
 
-This script copies a perfect Makefile, `src` folder, `include` folder, `tests` folder for your Unit_tests (that you should write ;) ), `.gitignore` file and `.github/worflows/test.yaml` to have a github action (check [this repo](https://github.com/LuciferBahamut/workshop-ga-LuciferBahamut) for an exemple of github action).
+This script copies a perfect `Makefile`, a `src` folder with a main for your language (C or C++), a `include` folder with an include, a `tests` folder for your Unit_tests (that you should write ;) ), `.gitignore` file and `.github/worflows/test.yaml` to have a github action (check [this repo](https://github.com/LuciferBahamut/workshop-ga-LuciferBahamut) for an exemple of github action).
 
-This script automatically pushes the `Makefile` and `.gitignore` and create automatically a new branch called `dev`. If you need help with branches check [this](https://riptutorial.com/git/example/1633/creating-and-checking-out-new-branches).
+With this script you can choose your language to have the good Makefile - main and include in your project. You can also enter the binary name of your project and it is directly added in your Makefile
+
+This script automatically pushes the `Makefile`, `.gitignore`, `Readme.md`, `src/main.c` or `src/Main.cpp` and `include/main.h` or `include/Main.hpp` and create automatically a new branch called `dev`. If you need help with branches check [this](https://riptutorial.com/git/example/1633/creating-and-checking-out-new-branches).
+
+Then look the result :
+![result](img/result.png)
 
 If you have any questions ask them to your Astek or APE.
 
