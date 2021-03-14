@@ -19,6 +19,8 @@ else
 fi
 cp .gitignore $2
 cp -r .github/ $2
+read -p 'What is the binary name ? ' bin
+sed -i 38i"BIN			=   $bin" $2/Makefile
 read -p 'Do you want rename your repo ? ' rename
 if [ "$rename" = "yes" ] 
 then
