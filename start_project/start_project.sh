@@ -8,17 +8,16 @@ read -p 'It is a C project or C++ project ? ' language
 if [ "$language" = "C" ]
 then
     cp c/Makefile $2
-    cp c/.gitignore $2
     cp -r c/include/ $2
     cp -r c/src/ $2
     cp -r c/tests $2
 else
     cp cpp/Makefile $2
-    cp cpp/.gitignore $2
     cp -r cpp/include/ $2
     cp -r cpp/src/ $2
     cp -r cpp/tests $2
 fi
+cp .gitignore $2
 cp -r .github/ $2
 read -p 'Do you want rename your repo ? ' rename
 if [ "$rename" = "yes" ] 
