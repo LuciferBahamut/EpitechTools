@@ -35,11 +35,11 @@ With this script you can choose your language to have the good Makefile - main a
 
 This script automatically pushes the `Makefile`, `.gitignore`, `Readme.md`, `src/main.c` or `src/Main.cpp` and `include/main.h` or `include/Main.hpp` and create automatically a new branch called `dev`. If you need help with branches check [this](https://riptutorial.com/git/example/1633/creating-and-checking-out-new-branches).
 
+If you have any questions ask them to your Astek or APE.
+
 Here is the result :
 
 ![result](img/result.png)
-
-If you have any questions ask them to your Astek or APE.
 
 ## Create a tools folder
 
