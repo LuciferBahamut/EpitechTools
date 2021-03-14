@@ -35,7 +35,6 @@ LDFLAGS		=
 #############
 
 ##	Names  ##
-BIN			=
 TEST_BIN	=	unit_tests
 #############
 
