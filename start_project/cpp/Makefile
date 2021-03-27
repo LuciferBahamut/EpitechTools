@@ -40,7 +40,7 @@ TEST_BIN	=	unit_tests
 
 ##	Rules  ##
 all:	$(MAIN_OBJ) $(SRC_OBJ)
-	@$(CC) -o $(BIN) $(MAIN_OBJ) $(SRC_OBJ) $(CFLAGS) $(CPPFLAGS)
+	@$(CPP) -o $(BIN) $(MAIN_OBJ) $(SRC_OBJ) $(CFLAGS) $(CPPFLAGS)
 	@printf "[\033[0;36mbuilt\033[0m] % 32s\n" $(BIN) | tr ' ' '.'
 
 # Debug
