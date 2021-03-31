@@ -1,6 +1,8 @@
 # EpitechTools
 All tools for a great experience at Epitech !
 
+Read to the end ! (There are some point - some different theme)
+
 ## Norminette
 
 You can find a norminette to check your coding style on your C projects.
