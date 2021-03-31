@@ -112,6 +112,22 @@ Here is the result :
 It's cool to have a tools folder to group all tools like this :
 ![toolsfolder](img/toolsfolder.png)
 
+## Install ZSH
+Is the best terminal better when bash (sorry to purist)
+
+ZSH add some color and indicator branch in your promt terminale.
+
+You can use tab to complete for code line too !
+
+## Install Visual Studio Code
+You can install Visual Studio Code on your computer but only if you can debug your code because VSCode has a debugger mode and some extension and IS VERY IMPORTANT to know debug your code without debugger.
+
+VSCode is cool to switch file when you are working, "a la place de" open and close your file.
+
+You can find some extension of all languages for debug or auto-complementation.
+And you can personalise your terminal ! (glassIt Vs :) )
+And you can see which file is modificated or not etc etc.
+
 ## To have a good intra !
 
 ### Use stylish extension
