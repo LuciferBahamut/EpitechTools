@@ -57,6 +57,8 @@ git add src/*
 git commit -m "[ADD] first main"
 git add include/*
 git commit -m "[ADD] first include"
+git add .github/workflows/test.yaml
+git commit -m "[ADD] github action"
 git push
 git branch dev
 git push --set-upstream origin dev
