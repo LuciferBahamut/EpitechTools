@@ -115,20 +115,30 @@ It's cool to have a tools folder to group all tools like this :
 ![toolsfolder](img/toolsfolder.png)
 
 ## Install ZSH
-Is the best terminal better when bash (sorry to purist)
+Is the best terminal better when bash (sorry to purists)
 
-ZSH add some color and indicator branch in your promt terminale.
+ZSH add some colors and indicates the branch you work on in your promt terminal.
 
-You can use tab to complete for code line too !
+You can use tab to complete commands too !
+
+Command to install Zsh :
+`$ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+
+You can find more information [here](https://ohmyz.sh/#install)
 
 ## Install Visual Studio Code
-You can install Visual Studio Code on your computer but only if you can debug your code because VSCode has a debugger mode and some extension and IS VERY IMPORTANT to know debug your code without debugger.
+You can install Visual Studio Code on your computer but only if you can debug your code by yourself. VSCode has a debugger mode and some extensions and IT IS VERY IMPORTANT to know how to debug your code without a debugger.
 
-VSCode is cool to switch file when you are working, "a la place de" open and close your file.
+VSCode is great to switch between files when you are working, instead of opening and closing your files.
 
-You can find some extension of all languages for debug or auto-complementation.
-And you can personalise your terminal ! (glassIt Vs :) )
-And you can see which file is modificated or not etc etc.
+You can find some extensions for all languages to debug or auto-completion.
+And you can personalise your terminal ! (glassIt Vs :) to have a semi-transparent interface and you can read your subject(s) while you are working)
+And you can see which file was modified or not etc.
+
+You can install Vscode with this command :
+`sudo dnf install code`
+
+To run Vscode use the command `code ./` (with a folder as an argument)
 
 ## To have a good intra !
 
