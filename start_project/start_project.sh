@@ -1,6 +1,8 @@
 #!/usr/bin/bash
 #startproject.sh
 
+path="../tek2/Semestre4/" # change this if you want use move project
+
 black='\e[0;30m'
 gray='\e[1;30m'
 red='\e[0;31m'
@@ -19,8 +21,6 @@ blackgray='\e[0;37m'
 white='\e[1;37m'
 neutral='\e[0;m'
 
-global path="../tek2/Semestre4/"
-
 function error_handling()
 {
     if [ "$#" -eq 1 ] 
@@ -31,8 +31,9 @@ function error_handling()
             echo "    ./start_project link name"
             echo ""
             echo "DESCRIPTION:"
-            echo "    link ssh link clone your github repository"
-            echo "    name the name of the repository"
+            echo "    [link]     ssh link clone your github repository"
+            echo "    [name]     the name of the repository"
+            echo -e "\nExample:\n    ./start_project git@git.com:example/test.git test"
             exit
         fi
         echo "This script takes 2 arguments, retry with --help"
@@ -70,12 +71,12 @@ function gpush_all()
     git commit -m "[ADD] first include"
     git add .github/workflows/test.yaml
     git commit -m "[ADD] github action"
-    echo -e "${blue}All commit done${neutral}"
+    echo -e "${green}All commit done${neutral}"
     echo -e "${blue}Start push${neutral}"
     git push
     git branch dev
     git push --set-upstream origin dev
-    echo -e "${blue}Push commit and dev branch done${neutral}"
+    echo -e "${green}Push commit and dev branch done${neutral}"
 }
 
 function copy_c()
@@ -87,7 +88,7 @@ function copy_c()
     #cp -r c/tests $1
     cp .gitignore $1
     cp -r .github/ $1
-    echo -e "${blue}END OF COPY${neutral}"
+    echo -e "${green}END OF COPY${neutral}"
 }
 
 function coyp_cpp()
@@ -99,14 +100,14 @@ function coyp_cpp()
     #cp -r cpp/tests $1
     cp .gitignore $1
     cp -r .github/ $1
-    echo -e "${blue}END OF COPY${neutral}"
+    echo -e "${green}END OF COPY${neutral}"
 }
 
 function start_clone()
 {
     echo -e "${blue}CLONE IN PROGRESS ...${neutral}"
     git clone $1
-    echo -e "${blue}END OF CLONE${neutral}"
+    echo -e "${green}END OF CLONE${neutral}"
     read -p 'It is a C project or C++ project ? ' language
     if [ "$language" = "C" ]
         then
@@ -118,7 +119,7 @@ function start_clone()
     echo -e "${blue}Start to write the binany${neutral}"
     sed -i 38i"BIN			=   $bin" $2/Makefile
     sed -i 12i"$bin" $2/.gitignore
-    echo -e "${bleu}Write binany done${neutral}"
+    echo -e "${green}Write binany done${neutral}"
 }
 
 error_handling $1 $2
