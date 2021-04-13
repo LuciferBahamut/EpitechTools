@@ -136,12 +136,14 @@ then
     read -p 'Where do you move your repo ? ' ans
     if [ "$rename" = "yes" ]
     then
-        $path += $ans
         mv $name "$path"
+        cd "$path"
+        mv $name $ans
+        cd $ans
     else
         mv $2 "$path"
+        cd "$path"
     fi
-    cd "$path"
 fi
 if [ "$rename" = "yes" ] 
 then
