@@ -58,7 +58,7 @@ function error_handling()
 function gpush_all()
 {
     echo -e "${blue}Preparing all commit${neutral}"
-    echo "# $2" >> README.md
+    echo "# $1" >> README.md
     git add Makefile
     git commit -m "[ADD] Makefile"
     git add .gitignore
@@ -91,7 +91,7 @@ function copy_c()
     echo -e "${green}END OF COPY${neutral}"
 }
 
-function coyp_cpp()
+function copy_cpp()
 {
     echo -e "${blue}COPY IN PROGRESS ...${neutral}"
     cp cpp/Makefile $1
@@ -136,11 +136,12 @@ then
     read -p 'Where do you move your repo ? ' ans
     if [ "$rename" = "yes" ]
     then
-        mv $name "$path""$ans"
+        $path += $ans
+        mv $name "$path"
     else
-        mv $2 "$path""$ans"
+        mv $2 "$path"
     fi
-    cd "$path""$ans"
+    cd "$path"
 fi
 if [ "$rename" = "yes" ] 
 then
