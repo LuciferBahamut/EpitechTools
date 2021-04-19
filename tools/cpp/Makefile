@@ -13,7 +13,7 @@ RM			=	rm -f
 #############
 
 ## Sources ##
-MAIN		=	src/Main.c
+MAIN		=	src/Main.cpp
 
 BIN_SRC		=
 
