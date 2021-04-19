@@ -44,14 +44,37 @@ function error_handling()
         echo "This script takes 2 arguments, retry with --help"
         exit
     fi
-    cd
-    if [ -d "delivery/tools" ]
+    if [ -d "${HOME}/delivery/tools/" ]
     then
         echo -e "${green}Tools folder found.${neutral}"
-        cd delivery/tools
+        cd ~/delivery/tools
     else
         echo -e "${red}Tools folder not found.${neutral}"
-        exit
+        echo -e "${blue}Start to create the tools folder.${neutral}"
+        if [ -d "${HOME}/delivery/" ]
+        then
+            mkdir ~/delivery/tools
+            cp -r ./c ~/delivery/tools
+            cp -r ./cpp ~/delivery/tools
+            cp -r ./.github ~/delivery/tools
+            cp ./.gitignore ~/delivery/tools
+            cp ./norminette ~/delivery/tools
+        else
+            mkdir ~/delivery
+            mkdir ~/delivery/tools
+            cp -r ./c ~/delivery/tools
+            cp -r ./cpp ~/delivery/tools
+            cp -r ./.github ~/delivery/tools
+            cp ./.gitignore ~/delivery/tools
+            cp ./norminette ~/delivery/tools
+        fi
+        if [ -d "${HOME}/delivery/tools/" ]
+        then
+            echo -e "${green}Tools folder has been created correctly.${neutral}"
+        else
+            echo -e "${red}Error tools folder not found or not create.${neutral}"
+            exit
+        fi
     fi
 }
 
