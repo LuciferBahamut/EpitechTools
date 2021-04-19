@@ -85,7 +85,7 @@ Finally, download the EPITECH's "moulinette" 's image with `sudo docker pull epi
 
 ### How to use it
 
-Check into the folder named `start_project`
+Check into the folder named `tools`
 
 To use the script just change the path in the script.
 
@@ -113,6 +113,8 @@ Here is the result :
 
 It's cool to have a tools folder to group all tools like this :
 ![toolsfolder](img/toolsfolder.png)
+
+This script creates automatically the tools folder at HOME (equivalent of `cd`) and creates `delivery/tools` folder
 
 ## Install ZSH
 Is the best terminal better when bash (sorry to purists)
